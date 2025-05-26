@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Fusion - All-In-One Fashion Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 py-3 px-6 flex justify-between items-center">
+    <div class="flex items-center space-x-6 font-bold text-lg">
+      <img src="logo.png" alt="Fashion Fusion" class="h-10">
+      <a href="/" class="text-blue-600">Home</a>
+      <a href="/home/fashion_recommend" class="hover:text-blue-500">Fashion Recommender</a>
+      <a href="/home/prs_fashion_recommend" class="hover:text-blue-500">Your Wardrobe</a>
+        <!-- Profile Dropdown/Link -->
+    <a href="/profile" class="flex items-center space-x-2 hover:text-blue-600">
+      <img src="https://img.icons8.com/ios-filled/24/user-male-circle.png" alt="Profile" class="w-6 h-6">
+      <span class="hidden md:inline font-medium">Profile</span>
+    </a>
+    </div>
+    <input type="text" placeholder="Search styles, brands..." class="px-4 py-2 w-64 bg-gray-100 rounded-lg border">
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="w-full bg-cover bg-center h-96 relative" style="background-image: url('https://img.freepik.com/free-photo/clothing-hangers-hanging-store_23-2148767571.jpg')">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl font-bold">Welcome to Fashion Fusion</h1>
+      <p class="mt-4 text-lg max-w-xl">Discover top fashion trends, deals, and get AI-powered outfit suggestions — all from one place.</p>
+      <a href="/home/prs_fashion_recommend" class="mt-6 px-6 py-2 bg-blue-600 rounded-full font-semibold hover:bg-blue-700">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Offers from Top Fashion Sites -->
+  <section class="mt-16 max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-4">🔥 Latest Deals from Popular Brands</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <img src="https://assets.myntassets.com/w_400,q_90/assets/images/2022/9/30/e7f37370-7a95-4213-b254-6f7fa6fdbb8c1664512742994-Offer-Banner.jpg" class="rounded-lg">
+        <p class="mt-2 text-sm text-gray-600">Flat 50% Off at Myntra</p>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/32183753138142.jpg" class="rounded-lg">
+        <p class="mt-2 text-sm text-gray-600">Tata CLiQ Festive Offers</p>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- Recommender Sections -->
+  <section class="mt-16 max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-4">🧠 Smart Recommendations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Fashion Recommender</h3>
+        <p class="text-gray-600 mb-4">Upload an image and find similar styles curated from leading fashion sites.</p>
+        <a href="/home/fashion_recommend" class="inline-block px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">Try It Now</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Your Virtual Wardrobe</h3>
+        <p class="text-gray-600 mb-4">Upload your own outfits and let AI suggest combinations or shopping matches.</p>
+        <a href="/home/prs_fashion_recommend" class="inline-block px-5 py-2 bg-green-600 text-white rounded-full hover:bg-green-700">Organize Wardrobe</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Categories -->
+  <section class="mt-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-bold mb-6">📚 Browse by Categories</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center bg-white shadow-md rounded-lg p-3 hover:scale-105 transition">
+        <img src="https://assets.myntassets.com/w_720,q_80/assets/images/2022/10/6/8b3eb2db-c9a5-4267-b2db-4be5278613ed1665061388473-Kurta-Sets_1.jpg" class="rounded-md">
+        <p class="mt-2 font-medium">Kurtas</p>
+      </div>
+      <div class="text-center bg-white shadow-md rounded-lg p-3 hover:scale-105 transition">
+        <img src="https://assets.myntassets.com/w_720,q_80/assets/images/2022/10/6/bc178f44-70bb-4b3b-8dc3-e1e03a5ff1341665061388834-Dresses.jpg" class="rounded-md">
+        <p class="mt-2 font-medium">Dresses</p>
+      </div>
+      <!-- More categories -->
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="mt-24 bg-blue-100 py-10 text-center">
+    <h2 class="text-2xl font-bold mb-2">📩 Stay in the Loop</h2>
+    <p class="text-gray-700 mb-4">Subscribe to get fashion trends, discounts & style tips delivered weekly.</p>
+    <form class="flex flex-col md:flex-row justify-center gap-4 max-w-xl mx-auto">
+      <input type="email" placeholder="Your email address" class="px-4 py-2 rounded-lg bg-white border w-full md:w-auto">
+      <button class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-16 border-t py-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600">
+      <div>
+        <h4 class="font-semibold mb-2">About</h4>
+        <ul>
+          <li>Our Story</li>
+          <li>Careers</li>
+          <li>Media</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Support</h4>
+        <ul>
+          <li>Help Center</li>
+          <li>Returns</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Explore</h4>
+        <ul>
+          <li>Trends</li>
+          <li>Deals</li>
+          <li>Blogs</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+        <ul>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
