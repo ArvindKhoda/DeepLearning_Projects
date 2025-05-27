@@ -39,7 +39,7 @@ app.secret_key = "jigysa"
 # AUTHENTICATION ROUTES
 # ============================
 
-@app.route('/login')
+@app.route('/')
 def login():
     return render_template('login.html')
 
@@ -87,7 +87,7 @@ def reg():
 
 @app.route('/home')
 def home():
-    return render_template('home.html', im=url_for('static', filename="home_image.png"))
+    return render_template('home.html')
 
 
 # ============================
@@ -236,4 +236,6 @@ def result():
 # APP ENTRY POINT
 # ============================
 
-app.run(host='0.0.0.0', debug=True, port=3000)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=3000)

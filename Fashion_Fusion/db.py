@@ -1,13 +1,12 @@
+import certifi
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import gridfs
 
 # MongoDB connection URI
-uri = "mongodb+srv://arvindkhoda:7725920259@cluster0.0ss4i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://arvindkhoda:7725920259@cluster0.0ss4i.mongodb.net/?retryWrites=true&w=majority&tls=true"
 
-# Create MongoDB client and connect
-client = MongoClient(uri)
-
+client = MongoClient(uri, tlsCAFile=certifi.where())
 # Use consistent database name
 db = client["Fashion_Fusion"]
 

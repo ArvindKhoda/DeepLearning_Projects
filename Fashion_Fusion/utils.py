@@ -126,3 +126,5 @@ def extract_multiple_features(image_folder, model):
     feature_list = [extract_features(file, model) for file in tqdm(filenames)]
     relative_paths = [os.path.join('/ps_uploads/', os.path.basename(file)) for file in filenames]
     return feature_list, relative_paths
+
+
